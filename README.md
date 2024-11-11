@@ -18,11 +18,11 @@ UMate is a web application designed to simplify the process of finding compatibl
 - License
 
 ### Features
-**User Authentication:** Secure login and sign-up functionality.
-**User Profiles:** Users can create and customize profiles with details such as budget, dietary preferences, smoking habits, etc.
-**Recommendation System:** The application suggests the top 5 roommate matches based on factors like the duration of stay and other preferences.
-**Filtering Options:** Users can filter potential roommates by budget, dietary restrictions, lifestyle preferences, and more.
-**Swipe Interface:** Inspired by dating apps, users can swipe through potential matches to find their ideal roommate.
+- **User Authentication:** Secure login and sign-up functionality.
+- **User Profiles:** Users can create and customize profiles with details such as budget, dietary preferences, smoking habits, etc.
+- **Recommendation System:** The application suggests the top 5 roommate matches based on factors like the duration of stay and other preferences.
+- **Filtering Options:** Users can filter potential roommates by budget, dietary restrictions, lifestyle preferences, and more.
+- **Swipe Interface:** Inspired by dating apps, users can swipe through potential matches to find their ideal roommate.
 
 ### Tech Stack
 - **Frontend:** React
@@ -86,21 +86,21 @@ Once you find a match, connect with potential roommates and discuss moving plans
 Here’s a summary of the main API endpoints:
 
 **User Authentication**
-POST /user/insert: Create a new user account
-POST /user/validate: Log in to an existing account
+- POST /user/insert: Create a new user account
+- POST /user/validate: Log in to an existing account
 
 **Profile Management**
-GET /user-details/<email>: Fetch user preferences
-POST /user-details/: Add user preferences
+- GET /user-details/<email>: Fetch user preferences
+- POST /user-details/: Add user preferences
 
 **Roommate Matching**
-GET /rs/top-match: Fetch the top 5 recommended roommates based on user email
-GET /rs/other-mates: Fetch all users except the top recommended roommates for a user
+- GET /rs/top-match: Fetch the top 5 recommended roommates based on user email
+- GET /rs/other-mates: Fetch all users except the top recommended roommates for a user
 
 **Other APIs**
-POST /user/favourites: Mark or unmark a roommate favourite for a user
-GET /user/favourite-roommates: List all favourite roommates and their details for a user
-GET /all_users/data: Return all users data except for password
+- POST /user/favourites: Mark or unmark a roommate favourite for a user
+- GET /user/favourite-roommates: List all favourite roommates and their details for a user
+- GET /all_users/data: Return all users data except for password
 Note: Ensure that the backend server is running on http://localhost:5000 (for MacOS - try a different port other than 5000) and the frontend server on http://localhost:3000 for a smooth connection.
 
 ### Contributing

@@ -124,3 +124,5 @@ Note: Ensure that the backend server is running on http://localhost:5000 (for Ma
 ### Contributing
 Contributions are welcome! If you'd like to improve UMate, please fork the repository, make your changes, and submit a pull request. Ensure your changes align with the project's goals and are thoroughly tested.
 
+### Devpost
+[Devpost Link](https://devpost.com/software/bumble-for-roommates)

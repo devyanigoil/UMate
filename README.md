@@ -25,9 +25,9 @@ UMate is a web application designed to simplify the process of finding compatibl
 **Swipe Interface:** Inspired by dating apps, users can swipe through potential matches to find their ideal roommate.
 
 ### Tech Stack
-**Frontend:** React
-**Backend:** Flask with Python
-**Database:** MongoDB
+- **Frontend:** React
+- **Backend:** Flask with Python
+- **Database:** MongoDB
 
 ### Installation
 To get the project up and running locally, follow these steps:

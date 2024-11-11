@@ -86,8 +86,9 @@ Once you find a match, connect with potential roommates and discuss moving plans
 Here’s a summary of the main API endpoints:
 
 **User Authentication**
-- POST /user/insert: Create a new user account
-- POST /user/validate: Log in to an existing account
+POST /user/insert: Create a new user account
+
+POST /user/validate: Log in to an existing account
 
 **Profile Management**
 - GET /user-details/<email>: Fetch user preferences

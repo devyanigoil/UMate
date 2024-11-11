@@ -86,9 +86,8 @@ Once you find a match, connect with potential roommates and discuss moving plans
 Here’s a summary of the main API endpoints:
 
 **User Authentication**
-POST /user/insert: Create a new user account
-
-POST /user/validate: Log in to an existing account
+- POST /user/insert: Create a new user account
+- POST /user/validate: Log in to an existing account
 
 **Profile Management**
 - GET /user-details/<email>: Fetch user preferences
@@ -105,21 +104,21 @@ POST /user/validate: Log in to an existing account
 Note: Ensure that the backend server is running on http://localhost:5000 (for MacOS - try a different port other than 5000) and the frontend server on http://localhost:3000 for a smooth connection.
 
 ### Challenges we ran into:
-- CORS Issues: We encountered Cross-Origin Resource Sharing (CORS) problems while integrating the frontend with the backend. Ensuring secure communication between the React frontend and Flask backend required configuring CORS policies correctly, especially for handling API requests smoothly.
+- **CORS Issues:** We encountered Cross-Origin Resource Sharing (CORS) problems while integrating the frontend with the backend. Ensuring secure communication between the React frontend and Flask backend required configuring CORS policies correctly, especially for handling API requests smoothly.
 
-- Flask Integration for the Recommendation Model: Integrating the recommendation model into the Flask backend was challenging. This involved setting up efficient API endpoints that could handle and process recommendation logic, ensuring real-time data handling and accurate matching.
+- **Flask Integration for the Recommendation Model:** Integrating the recommendation model into the Flask backend was challenging. This involved setting up efficient API endpoints that could handle and process recommendation logic, ensuring real-time data handling and accurate matching.
 
-- Data Processing for Recommendations: Preparing the data for recommendation was complex, requiring thorough preprocessing of user profiles and preferences. It was essential to clean, standardize, and transform data to accurately align with the compatibility factors used by the recommendation model.
+- **Data Processing for Recommendations:** Preparing the data for recommendation was complex, requiring thorough preprocessing of user profiles and preferences. It was essential to clean, standardize, and transform data to accurately align with the compatibility factors used by the recommendation model.
 
 ### Future Scope
 - **Make it live on AppStore**
-
+  
 - **Enhanced Matching Algorithm:** We plan to refine the recommendation model by incorporating more personalized factors, such as shared hobbies or specific living preferences, to improve match accuracy and user satisfaction.
-
+  
 - **Social Media Integration:** Just like Bumble, integrating social media handles into the user profiles could allow users to verify their personalities and lifestyles, providing a more holistic view of potential roommates.
-
+  
 - **Real-Time Chat Feature:** Adding a real-time chat feature would enable users to communicate with potential roommates directly within the app, streamlining the process of finalizing a match and moving forward with plans.
-
+  
 - **Roommate Reviews and Ratings:** To build more trust in the roommate search process, we could implement a review and rating system where users can leave feedback on their previous roommates, helping future users make informed decisions.
   
 ### Contributing

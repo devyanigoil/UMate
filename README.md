@@ -103,6 +103,24 @@ Here’s a summary of the main API endpoints:
 - GET /all_users/data: Return all users data except for password
 Note: Ensure that the backend server is running on http://localhost:5000 (for MacOS - try a different port other than 5000) and the frontend server on http://localhost:3000 for a smooth connection.
 
+### Challenges we ran into:
+- CORS Issues: We encountered Cross-Origin Resource Sharing (CORS) problems while integrating the frontend with the backend. Ensuring secure communication between the React frontend and Flask backend required configuring CORS policies correctly, especially for handling API requests smoothly.
+
+- Flask Integration for the Recommendation Model: Integrating the recommendation model into the Flask backend was challenging. This involved setting up efficient API endpoints that could handle and process recommendation logic, ensuring real-time data handling and accurate matching.
+
+- Data Processing for Recommendations: Preparing the data for recommendation was complex, requiring thorough preprocessing of user profiles and preferences. It was essential to clean, standardize, and transform data to accurately align with the compatibility factors used by the recommendation model.
+
+### Future Scope
+- **Make it live on AppStore**
+
+- **Enhanced Matching Algorithm:** We plan to refine the recommendation model by incorporating more personalized factors, such as shared hobbies or specific living preferences, to improve match accuracy and user satisfaction.
+
+- **Social Media Integration:** Just like Bumble, integrating social media handles into the user profiles could allow users to verify their personalities and lifestyles, providing a more holistic view of potential roommates.
+
+- **Real-Time Chat Feature:** Adding a real-time chat feature would enable users to communicate with potential roommates directly within the app, streamlining the process of finalizing a match and moving forward with plans.
+
+- **Roommate Reviews and Ratings:** To build more trust in the roommate search process, we could implement a review and rating system where users can leave feedback on their previous roommates, helping future users make informed decisions.
+  
 ### Contributing
 Contributions are welcome! If you'd like to improve UMate, please fork the repository, make your changes, and submit a pull request. Ensure your changes align with the project's goals and are thoroughly tested.
 

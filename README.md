@@ -33,42 +33,42 @@ UMate is a web application designed to simplify the process of finding compatibl
 To get the project up and running locally, follow these steps:
 
 **Prerequisites**
-Node.js and npm for the React frontend
-Python 3 for the backend
-MongoDB for the database
+- Node.js and npm for the React frontend
+- Python 3 for the backend
+- MongoDB for the database
 
-Clone the Repository
+**Clone the Repository**
 ```
 git clone https://github.com/your-username/UMate.git
 cd UMate
 ```
-Setting Up the Backend (Flask API)
+**Setting Up the Backend (Flask API)** 
 Navigate to the backend directory:
 ```
 cd backend
 ```
-Install the Python dependencies:
+**Install the Python dependencies:**
 ```
 pip install -r requirements.txt
 ```
-Start the Flask server(By default runs the app on port 5000):
+**Start the Flask server**(By default runs the app on port 5000):
 ```
 flask run
 ```
-Setting Up the Frontend (React)
+**Setting Up the Frontend (React)**
 Navigate to the frontend directory:
 ```
 cd frontend
 ```
-Install the npm dependencies:
+**Install the npm dependencies:**
 ```
 npm install
 ```
-Start the React development server:
+**Start the React development server:**
 ```
 npm start
 ```
-The frontend should now be running on http://localhost:3000 and the backend on http://localhost:5000 on Windows. However, on MacOs, port 5000 is occupied with some other process. So run the backend on MacOs on a port other than 5000:
+The frontend should now be running on http://localhost:3000 and the backend on http://localhost:5000 on Windows. However, on MacOs, port 5000 is occupied with some other process. So run the backend on MacOs on a port other than 5000.
 Use the following command to run the backend on port 5050:
 ```
 flask run --port 5050

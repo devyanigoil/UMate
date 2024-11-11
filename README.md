@@ -96,6 +96,7 @@ Filtering
 GET /api/filter: Apply filters based on budget, dietary preferences, duration of stay, and more
 Note: Ensure that the backend server is running on http://localhost:5000 and the frontend server on http://localhost:3000 for a smooth connection.
 
+## Final outcome
 Contributing
 Contributions are welcome! If you'd like to improve UMate, please fork the repository, make your changes, and submit a pull request. Ensure your changes align with the project's goals and are thoroughly tested.
 

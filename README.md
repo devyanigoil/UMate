@@ -9,29 +9,30 @@ UMate is a web application designed to simplify the process of finding compatibl
 [App Demo](https://drive.google.com/file/d/1vyIsDAp8QxKZ619tc18QEW1A_Plb-XPO/view?usp=sharing)
 
 ### Table of Contents
-Features
-Tech Stack
-Installation
-Usage
-API Endpoints
-Contributing
-License
+- Features
+- Tech Stack
+- Installation
+- Usage
+- API Endpoints
+- Contributing
+- License
 
 ### Features
-User Authentication: Secure login and sign-up functionality.
-User Profiles: Users can create and customize profiles with details such as budget, dietary preferences, smoking habits, etc.
-Recommendation System: The application suggests the top 5 roommate matches based on factors like the duration of stay and other preferences.
-Filtering Options: Users can filter potential roommates by budget, dietary restrictions, lifestyle preferences, and more.
-Swipe Interface: Inspired by dating apps, users can swipe through potential matches to find their ideal roommate.
+**User Authentication:** Secure login and sign-up functionality.
+**User Profiles:** Users can create and customize profiles with details such as budget, dietary preferences, smoking habits, etc.
+**Recommendation System:** The application suggests the top 5 roommate matches based on factors like the duration of stay and other preferences.
+**Filtering Options:** Users can filter potential roommates by budget, dietary restrictions, lifestyle preferences, and more.
+**Swipe Interface:** Inspired by dating apps, users can swipe through potential matches to find their ideal roommate.
 
 ### Tech Stack
-Frontend: React
-Backend: Flask with Python
-Database: MongoDB
-Installation
+**Frontend:** React
+**Backend:** Flask with Python
+**Database:** MongoDB
+
+### Installation
 To get the project up and running locally, follow these steps:
 
-### Prerequisites
+**Prerequisites**
 Node.js and npm for the React frontend
 Python 3 for the backend
 MongoDB for the database
@@ -84,21 +85,23 @@ Once you find a match, connect with potential roommates and discuss moving plans
 ### API Endpoints
 Here’s a summary of the main API endpoints:
 
-User Authentication
-POST /api/signup: Create a new user account
-POST /api/login: Log in to an existing account
+**User Authentication**
+POST /user/insert: Create a new user account
+POST /user/validate: Log in to an existing account
 
-Profile Management
-GET /api/user/<user_id>: Fetch user details
-PUT /api/user/<user_id>: Update user profile
+**Profile Management**
+GET /user-details/<email>: Fetch user preferences
+POST /user-details/: Add user preferences
 
-Roommate Matching
-GET /api/recommendations/<user_id>: Fetch top 5 recommended roommates for a given user
-GET /api/matches: Fetch all available matches based on filters
-Filtering
+**Roommate Matching**
+GET /rs/top-match: Fetch the top 5 recommended roommates based on user email
+GET /rs/other-mates: Fetch all users except the top recommended roommates for a user
 
-GET /api/filter: Apply filters based on budget, dietary preferences, duration of stay, and more
-Note: Ensure that the backend server is running on http://localhost:5000 and the frontend server on http://localhost:3000 for a smooth connection.
+**Other APIs**
+POST /user/favourites: Mark or unmark a roommate favourite for a user
+GET /user/favourite-roommates: List all favourite roommates and their details for a user
+GET /all_users/data: Return all users data except for password
+Note: Ensure that the backend server is running on http://localhost:5000 (for MacOS - try a different port other than 5000) and the frontend server on http://localhost:3000 for a smooth connection.
 
 ### Contributing
 Contributions are welcome! If you'd like to improve UMate, please fork the repository, make your changes, and submit a pull request. Ensure your changes align with the project's goals and are thoroughly tested.

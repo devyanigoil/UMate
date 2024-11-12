@@ -1,7 +1,7 @@
 # UMate - Bumble for Roommates
   ![WhatsApp Image 2024-11-09 at 10 22 56 PM](https://github.com/user-attachments/assets/ad77521f-7a32-4ca9-b6a7-491d6163562d)
 
-Ever had difficulty finding a roommate? Just swipe right and find your perfect match!
+Ever had difficulty finding a roommate? Just click on UMate and find your perfect match!
 
 UMate is a web application designed to simplify the process of finding compatible roommates. With UMate, users can easily create a profile, set their preferences, and find potential roommates using a swipe interface similar to dating apps. By using a recommendation model, UMate suggests the top matches based on compatibility factors like the duration of stay, lifestyle, budget, dietary preferences, and more.
 
